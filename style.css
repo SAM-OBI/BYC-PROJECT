@@ -21,7 +21,7 @@ html {
 
 .navbar li a{
     font-family: "Jost" sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     font-weight: 16px;
     line-height: 100%;
 }
@@ -56,11 +56,12 @@ html {
 .navbar-brand img {
       height: 40px;
     }
+/* END CODE FOR NAV  */
 
-    /* styling for index.html starts here */
+    /* styling for index.html starts here LOGIN FORM*/
     .index{
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-        font-family: "Nato sans", sans-serif;
+        font-family: "Noto Sans", sans-serif;
 
     }
 
@@ -111,6 +112,8 @@ html {
     .signup-padding{
         padding-bottom: 17% !important;
     }
+    /* END CODE FOR LOGIN INDEX.HTML  */
+
 
     /* footer styling 1 starts here  */
   
@@ -226,8 +229,10 @@ hr{
     line-height: 100%;
     color: #fff;
 }
-/* footer ends here  */
+/* FOOTER STYLING ENDS HERE  */
 
+
+/*FIRST LANDING PAGE STYLING STARTS HERE */
 /* SECTION 1 STARTS HERE */
  .sec1{
     margin-top: 100px;
@@ -335,7 +340,7 @@ hr{
 }
 
 .sec4 .card-title{
-    font-family: 'Nato Sans', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
     font-weight: 700;
     font-size: 16px;    
     line-height: 100%;
@@ -392,8 +397,9 @@ hr{
     line-height: 140%;
     color: #424242;
 }
+/* END CODE FOR FIRST LANDING PAGE */
 
-/* styling for blog section here  */
+/* STYLING FOR FIRST BLOG PAGE  */
 /* default typography for h5 and p blog section */
 .blog-section .card-title{
     font-family: "Noto Sans", sans-serif;
@@ -403,14 +409,58 @@ hr{
     color: #212121;
 }
 .blog-section .card-text{
-    font-family: "Nato Sans", sans-serif;
-    font-weight: 400;
+    font-weight: 400 !important;
     font-size: 20px;
-    line-height: 100%;
     color: #424242;
+    line-height: 100%;
+    /* font-family: "Noto Sans", sans-serif;  */
+}
+/* .blog-section br{
+    display: none;
+} */
+.blog-section h1{
+    font-weight: 700;
+    font-size: 48px;
+    font-family: "Jost", sans-serif;
+}
+.page-link{
+    width: 43px;
+    height: 43px;
+}
+.page-link:hover
+{
+border: 1px solid #FB8200;
+}
+/* END FOR FIRST BLOG  */
+
+/* CODE FOR BLOG-HOME SECTION(SECOND BLOG) */
+.home-blog{
+        font-family: "Noto Sans", sans-serif;
+}
+.breadcrumb-item{
+    font-weight: 400;
+    font-size: 17px;
+    color: rgba(0, 0, 0, 0.5);
 }
 
+.homeBlog-p{
+    font-weight: 400 !important;
+    font-size: 20px;
+    color: #424242;
+    word-spacing: 1px;
+    letter-spacing: 1.6px;
+    line-height: 100%;
+    font-family: "Noto Sans", sans-serif;
+    text-align: center;
+}
 
+/* .home-blog styling here  */
+     .homeHeadng{
+        font-size: 48px !important;
+        font-weight: 700;
+        line-height: 100%;
+        font-family: "Noto Sans", sans-serif !important;
+     }
 
 @media screen and (max-width: 600px) {
     .navbar {
@@ -420,7 +470,7 @@ hr{
     body{
         max-width:  100% !important;
     }
-   /* styling for login  */
+   /* styling for login OR INDEX.HTML  */
    .loginEmail, .password, .login-form, .login-Btn{
         width: 99%;
     }
@@ -437,10 +487,11 @@ hr{
     .index{
         height: 770px;
     }
-    /* .login-Btn{
-        margin-bottom: 9% !important;
-    } */
+
+    /*END CODE FOR INDEX.HTML LOGIN
+    */
    
+    /*MEDIA STYLING FOR FIRST LANDING PAGE   */
     .sec1{
         margin-top: 50px;
     }
@@ -503,13 +554,6 @@ hr{
         
     }
 
-    /* section 5 media query  */
-    /* .sec5 .card-body{
-        padding: 0px 10px ;
-    } */
-    /* .sec5 .d-flex{
-        text-align: left;
-    } */
      .sec5 .wf,
      .sec5 h3,
      .sec5 p
@@ -534,10 +578,18 @@ hr{
     width: 100%;
     height: 63vh;
    }
+   /* END CODE FOR LANDING PAGE  */
 
-   /* media query for blog section   */
+   /* media query for FIRST blog section BLOG.HTML  */
     .blog-section br{
         display: none !important;
+     }
+     .blog-section{
+        max-width: 98%;
+     }
+     .blog-section .container{
+        padding-top: 0px !important;
+        margin-top: 0px !important;
      }
     .blog-section .card-title{
           font-size: 20px !important;
@@ -545,11 +597,17 @@ hr{
           line-height: 100% !important;
      }
     .blog-section .card-text{
-          font-size: 16px !important;
-          font-weight: 400 !important;
+          font-size: 15px !important;
+          font-weight: 300 !important;
           line-height: 100% !important;
+          letter-spacing: 1px;
+          word-spacing: 0px;
+          width: 100%;
      }
 
+     /* ENDS HERE FIRST BLOG  */
+     
+     
 }
 
 @media (min-width: 601px) and (max-width: 1200px) {
@@ -557,6 +615,9 @@ hr{
     .footer-col{
         padding-left: 0px !important;
     }
+    /* ENDS HERE  */
+
+    /* QUERY FOR LOGIN FORM STARTS HERE  */
     .order-md-2, .order-md-1{
         width: 100% !important;
         text-align: center;
@@ -570,4 +631,5 @@ hr{
     .login-form{
         height: 350px;
     }
+    /* ENDS HERE  */
 }
