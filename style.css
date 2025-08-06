@@ -61,6 +61,27 @@ html {
     .index{
         box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
     }
+
+    .loginEmail, .password{
+        font-family: "Nato sans", sans-serif;
+        width: 500px;
+        height: 45px;
+        border: 1px solid #BD3A3A;
+        border-radius: 10px;
+        outline:#BD3A3A;
+        padding: 2px 15px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 100%;
+    }
+    #form-label{
+        font-weight: 200;
+        font-size: 16px;
+        line-height: 100%;
+        color: #000000;
+        font-family: "Nato sans", sans-serif;
+    }
+
     /* footer styling 1 starts here  */
   
 
