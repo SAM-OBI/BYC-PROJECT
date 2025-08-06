@@ -59,11 +59,12 @@ html {
 
     /* styling for index.html starts here */
     .index{
-        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        font-family: "Nato sans", sans-serif;
+
     }
 
-    .loginEmail, .password{
-        font-family: "Nato sans", sans-serif;
+    .loginEmail, .password,.login-Btn{
         width: 500px;
         height: 45px;
         border: 1px solid #BD3A3A;
@@ -71,7 +72,7 @@ html {
         outline:#BD3A3A;
         padding: 2px 15px;
         font-size: 18px;
-        font-weight: 400;
+        font-weight: 100 !important;
         line-height: 100%;
     }
     #form-label{
@@ -79,7 +80,36 @@ html {
         font-size: 16px;
         line-height: 100%;
         color: #000000;
-        font-family: "Nato sans", sans-serif;
+    }
+    .login-form{
+        width: 500px;
+        height: 450px;
+    }
+    .form-check-input{
+    width: 30px;
+    height: 25px;
+    border: 1px solid #B0B0B0;
+    }
+    .index-login {
+        color: #212121;
+        font-weight: 700;
+        font-size: 26px;
+    }
+    .fg-index{
+        font-size: 16px;
+        font-weight: 400;
+        color: #000000;
+        line-height: 100%;
+        letter-spacing: 0%;
+    }
+    .login-Btn{
+        height: 55px !important;
+        background-color: #BD3A3A;
+        color: #FFFFFF;        font-size: 16px;
+        font-weight: 700;    
+    }
+    .signup-padding{
+        padding-bottom: 17% !important;
     }
 
     /* footer styling 1 starts here  */
@@ -171,6 +201,7 @@ html {
     border: none;
     cursor: pointer; 
 }
+
 
 .contact-info{
     font-family: "Nunito Sans", sans-serif;
@@ -389,8 +420,25 @@ hr{
     body{
         max-width:  100% !important;
     }
-   /* #mobileMenu {
-      display: block !important;
+   /* styling for login  */
+   .loginEmail, .password, .login-form, .login-Btn{
+        width: 99%;
+    }
+    .form-check-input{
+        width: 20px;
+        height: 23px;
+    }
+    .fg-index br{
+        display: none;
+    }
+    .login-form{
+        height: 350px;
+    }
+    .index{
+        height: 770px;
+    }
+    /* .login-Btn{
+        margin-bottom: 9% !important;
     } */
    
     .sec1{
@@ -431,7 +479,7 @@ hr{
         display: none !important;
     }
     .collection1{
-        width: 98% !important;
+        width: 97% !important;
         height: 100% !important;
     }
     .collectionb{
@@ -501,20 +549,25 @@ hr{
           font-weight: 400 !important;
           line-height: 100% !important;
      }
-    /* #collectionImage{
-        width: 100% !important;
-        height: 100% !important;
-        padding-bottom: 0px !important;
-    } */
-    /* .smallDev {
-        display: flex;
-        justify-content: space-between !important;
-        align-items: left !important;
 
+}
+
+@media (min-width: 601px) and (max-width: 1200px) {
+    /* footer  */
+    .footer-col{
+        padding-left: 0px !important;
     }
-
-    .BYC {
-        text-align: left !important;
-    } */
-
+    .order-md-2, .order-md-1{
+        width: 100% !important;
+        text-align: center;
+    }
+    .loginEmail, .password, .login-form, .login-Btn{
+        width: 100% !important;
+    }
+    .Signup-2{
+    text-align: center !important;    
+    }
+    .login-form{
+        height: 350px;
+    }
 }

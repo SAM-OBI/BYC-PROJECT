@@ -13,7 +13,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-white">
+    <nav class="navbar navbar-expand-lg mb-5 mb-lg-5 pb-lg-5">
         <div class="container-fluid"> 
               <!-- Left UL LI -->
                 <div class="d-none d-lg-flex">
@@ -66,31 +66,42 @@
         </div>
     </nav> 
     
-    <section class="container-fluid index">
-        <div class="container">
-            
-            <div class="row">
-                
-                <div class="col-sm-12 col-lg-6 col-lg-6">
+    <section class="container-fluid">
+        <div class="container index  px-lg-5 px-md-4">
+            <div class="row  pb-lg-4 ">
+              <!-- first col here  -->
+              <div class="col-sm-12 col-lg-6 col-md-6 order-2 order-md-2 order-lg-1 ">
                     <div class="text-center">
-                        <h2>Login</h2>
+                        <h2 class="index-login pt-3 my-3 my-lg-5">Login</h2>
                     </div>
-                    <form class="mb-3">
+                    <form class="mb-3 login-form">
                         <label for="loginEmail" class="form-label mb-3" id="form-label">E-mail</label><br>
                         <input type="email" class="loginEmail mb-4" id="loginEmail" ><br>
 
                         <label for="password" class="form-label mb-3" id="form-label">Password</label><br>
-                        <input type="password" class="mb-3 password" id="password" >
+                        <input type="password" class="mb-3 password" id="loginPassword" >
 
-                        <div class="d-flex justify-content-between ">
-
+                        <div class="d-flex justify-content-between  mb-3">
+                          <div>
+                            <input type="checkbox" class="form-check-input me-1 me-lg-3" id="rememberMe">
+                            <label class="form-check-label mt-2 fg-index" for="rememberMe">Remember me</label>
+                          </div>
+                          <a href="" class="mt-2 fg-index text-decoration-none text-dark">forgot your password?</a>
                         </div>
+                        <button class="mt-3 login-Btn" id="login-Btn"  onclick="loginForm(event)">LOGIN</button>
                     </form>
-                </div>
-
-                <div class="col-sm-12 col-lg-6 col-lg-6">
-
-                </div>
+              </div>
+                <!-- second col here  -->
+              <div class="col-sm-12 col-md-6 col-lg-6 order-1 order-md-1 ">
+                  <div class="text-center Signup">
+                      <h2 class="index-login pt-3 my-3 my-lg-5">Create your an account</h2>
+                      <p class="fg-index pt-3 my-3 my-lg-5 mb-lg-4 pb-lg-5 signup-padding">Create your customer account in just a few clicks! <br>
+                          You can register using your e-mail address </p>
+                      <div class="mt-lg-5 mt-md-4 pt-lg-5">
+                         <button class="mt-3 login-Btn mb-5" id="create-Btn"  onclick="createAccount(event)">CREATE AN ACCOUNT VIA E-MAIL</button>
+                      </div>
+                  </div>
+              </div>
             </div>
         </div>
     </section>
@@ -104,7 +115,7 @@
     <footer class=" mt-5 py-4 pb-2 footer-font" style="background-color: #212121;">
        <div class="container pt-lg-5 mt-lg-5 py-md-3 text-light">
           <div class="row">
-            <div class="col-sm-12 col-md-6 mb-4 col-lg-2 mb-md-0">
+            <div class="col-sm-12 col-md-6 mb-4 col-lg-2 mb-md-0 ">
               <h5 class="text-captalize mb-lg-3">Company Info </h5>
               <ul class="list-unstyled text-light">
                 <li class="my-lg-2"><a href="#" class="text-light " style="text-decoration: none; ">About Us</a></li>
@@ -136,7 +147,7 @@
               </ul>
             </div>
 
-            <div class="col-sm-12 col-md-6 mb-4 col-lg-3 "> 
+            <div class="col-sm-12 col-md-6 mb-4 col-lg-3 footer-col"> 
               <h5 class="text-captalize mb-lg-3">Signup For The Latest News</h5>
               <form class="form">
                   <span class="mail-span mb-3">
