@@ -25,23 +25,12 @@ html {
     font-weight: 16px;
     line-height: 100%;
 }
-
-.font-seog{
-    font-family: "Noto-Sans", sans-serif !important;
-}
-
-
-.footer-font{
-    font-family: "Jost", sans-serif;
-}
 .nav-item {
     font-family: "Jost", sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height: 100%;
 }
-
-
 .navbar {
       padding: 1rem;
     }
@@ -61,10 +50,15 @@ html {
     /* styling for index.html starts here LOGIN FORM*/
     .index{
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-        font-family: "Noto Sans", sans-serif;
+        font-family: "Noto Sans", sans-serif; 
+        height: 750px;
 
     }
-
+    .order-md-2{
+        border-right: 1px solid #F3F0F0;
+        height: 500px;
+        /* padding-top: 20px; */
+    }
     .loginEmail, .password,.login-Btn{
         width: 500px;
         height: 45px;
@@ -77,7 +71,7 @@ html {
         line-height: 100%;
     }
     #form-label{
-        font-weight: 200;
+        font-weight: 400 !important;
         font-size: 16px;
         line-height: 100%;
         color: #000000;
@@ -107,10 +101,10 @@ html {
         height: 55px !important;
         background-color: #BD3A3A;
         color: #FFFFFF;        font-size: 16px;
-        font-weight: 700;    
+        font-weight: 700 !important;    
     }
     .signup-padding{
-        padding-bottom: 17% !important;
+        padding-bottom: 19% !important;
     }
     /* END CODE FOR LOGIN INDEX.HTML  */
 
@@ -139,6 +133,14 @@ html {
     font-family: "Jost", sans-serif;
 }
 /* footer contact email  */
+.font-seog{
+    font-family: "Noto-Sans", sans-serif !important;
+}
+
+
+.footer-font{
+    font-family: "Jost", sans-serif;
+}
 .contact-mail {
    width: 320px;
     height: 56px;
@@ -150,6 +152,15 @@ html {
     background-color: transparent;
     outline: none;
     color: #fff;
+}
+.email-btn{
+    position: absolute;
+    top: 24px;
+    right: 1px;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    cursor: pointer; 
 }
  ::placeholder {
     color: #fff;
@@ -194,17 +205,6 @@ html {
     font-size: 14px;
     line-height: 100%;
 }
-
-.email-btn{
-    position: absolute;
-    top: 24px;
-    right: 1px;
-    transform: translateY(-50%);
-    background-color: transparent;
-    border: none;
-    cursor: pointer; 
-}
-
 
 .contact-info{
     font-family: "Nunito Sans", sans-serif;
@@ -415,22 +415,26 @@ hr{
     line-height: 100%;
     /* font-family: "Noto Sans", sans-serif;  */
 }
-/* .blog-section br{
-    display: none;
-} */
-.blog-section h1{
+
+.default-h1{
     font-weight: 700;
     font-size: 48px;
     font-family: "Jost", sans-serif;
 }
+
+/* PAGINATION START  */
 .page-link{
     width: 43px;
     height: 43px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border: none;
+    outline: none;
 }
 .page-link:hover
 {
 border: 1px solid #FB8200;
 }
+/* PAGINATION END  */
 /* END FOR FIRST BLOG  */
 
 /* CODE FOR BLOG-HOME SECTION(SECOND BLOG) */
@@ -446,21 +450,116 @@ border: 1px solid #FB8200;
 .homeBlog-p{
     font-weight: 400 !important;
     font-size: 20px;
+    width: 100%;
     color: #424242;
-    word-spacing: 1px;
-    letter-spacing: 1.6px;
+    word-spacing: 1.9px;
     line-height: 100%;
     font-family: "Noto Sans", sans-serif;
-    text-align: center;
+    /* text-align: justify; */
+    /* text-align-last: justify; */
+    /* hyphens: auto; */
 }
-
-/* .home-blog styling here  */
-     .homeHeadng{
+    .homeHeadng{
         font-size: 48px !important;
         font-weight: 700;
         line-height: 100%;
         font-family: "Noto Sans", sans-serif !important;
-     }
+}
+
+/* .home-blog styling ends here  */
+
+/* ABOUT US PAGE STARTS HERE  */
+
+
+.about-p{
+    font-weight: 380 !important;
+    font-size: 32px;
+    line-height: 130%;
+    color: #212121;
+    font-family: "Noto Sans", sans-serif;
+
+}
+.about-card:hover {
+    background-color: rgba(189, 58, 58, 0.04);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    font-weight: 350;
+    color: #383737;
+    font-family: "Noto Sans", sans-serif;
+}
+.about-h3{
+    font-weight: 650;
+    font-size: 26px;
+    color: #D7000F;
+    font-family: "Noto Sans", sans-serif;
+}
+/* .about-h{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 100%;
+    color: #212121;
+    font-family: "Noto Sans", sans-serif;
+} */
+
+.about-sec3{
+box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+ border-radius: 10px;
+}
+
+.about-sec3 .card-text{
+    font-size: 16px;
+    font-weight: 700;
+    color: #19191D;
+    font-family: "Jost", sans-serif;
+}
+.text-p{
+    font-weight: 450 !important;
+    font-size: 20px;
+}
+/* .about-sec3 .text-p{
+
+} */
+.about-sec3 .men-fash{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 143%;
+    letter-spacing: 1.8%;
+    color: #787885;
+}
+
+.about-sec3 .price{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 100%;
+    color: #000000DE;
+    font-family: "Noto Sans", sans-serif;
+
+}
+.about-sec3 .rating{
+    font-family: "Roboto ", sans-serif;
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 23%;
+    color: #5E6366;
+}
+/* ABOUT US ENDS HERE  */
+
+/* CONTACT US STYLING STARTS HERE  */
+.contact-us h5{
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 100%;
+    color: #000000;
+    font-family: "Noto Sans", sans-serif;
+}
+
+.contact-us p{
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 100%;
+    color: #000000;
+    font-family: 'Segoe UI', sans-serif;
+}
 
 @media screen and (max-width: 600px) {
     .navbar {
@@ -485,7 +584,10 @@ border: 1px solid #FB8200;
         height: 350px;
     }
     .index{
-        height: 770px;
+        height: 870px;
+    }
+    .fg-index{
+        font-size: 15px;
     }
 
     /*END CODE FOR INDEX.HTML LOGIN
@@ -508,12 +610,17 @@ border: 1px solid #FB8200;
         word-spacing: 0px;
         padding: 12px 0px;
     }
+    .sec1-imgM{
+        width: 88%;
+        height: 400px;
+    }
     .sec2 h2{
         font-size: 24px !important;
         font-weight: 700 !important;
         margin: 50px 0px !important;
         word-spacing: 0px !important;
     }
+
     .sec3 h2{
         font-size: 30px !important;
         font-weight: 400 !important;
@@ -569,7 +676,7 @@ border: 1px solid #FB8200;
      }
     .card-sec5 .d-flex{
         margin-top: 20px;
-        width: 74vw;
+        width: 100%;
    }
    .wade{
     font-size: 15px !important;
@@ -581,11 +688,14 @@ border: 1px solid #FB8200;
    /* END CODE FOR LANDING PAGE  */
 
    /* media query for FIRST blog section BLOG.HTML  */
-    .blog-section br{
+    .blog-section .default-h1{
+        font-size: 30px !important;
+    }
+   .blog-section br{
         display: none !important;
      }
      .blog-section{
-        max-width: 98%;
+        max-width: 100%;
      }
      .blog-section .container{
         padding-top: 0px !important;
@@ -598,7 +708,7 @@ border: 1px solid #FB8200;
      }
     .blog-section .card-text{
           font-size: 15px !important;
-          font-weight: 300 !important;
+          font-weight: 500 !important;
           line-height: 100% !important;
           letter-spacing: 1px;
           word-spacing: 0px;
@@ -606,16 +716,265 @@ border: 1px solid #FB8200;
      }
 
      /* ENDS HERE FIRST BLOG  */
+
+     /* media for about us page  */
+     .ABOUT-PAGE .default-h1{
+        margin: 20px !important;
+     }
+     .about-h{
+        text-align: center;
+    }
+     .about-p{
+        font-size: 15px !important;
+        text-align: center;
+     }
+
+     .about-sec2 .default-h1{
+        padding-top: 30px;
+        font-size: 25px !important;
+        text-align: start;
+     }
      
+     .about-card{
+        width: 100% !important;
+        height: 28% !important;
+     }
+     .about-card {
+        background-color: rgba(189, 58, 58, 0.04);
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+        font-weight: 350;
+        color: #383737;
+        font-family: "Noto Sans", sans-serif;
+        height: 30%;
+    }
+    .about-card .down{
+        height: 800px !important;
+        /* padding-bottom: 0 !important; */
+        margin-bottom: 0 !important;
+    }
+    .about-sec2 .card-body{
+        padding: 5px;
+    }
+    .about-h3{
+        padding-top: 3px !important;
+    }
+    .about-text br{
+        display: none;
+    }
+    .flow-col{
+        position: relative;
+        top: -50px;
+        z-index: 2;
+    }
+    .flow-col3{
+        position: relative;
+        top: -90px;
+        z-index: 2;
+        opacity: 0.9;
+    }
+    .about-card .middle br{
+        display: none;
+    }
+    .about-card .middle{
+        height: 800px !important;
+    }
      
+    /* ABOUT SEC3 STYLING  */
+    .about-sec3{
+        position: relative;
+        top: -60px;
+    }
+    .card-aboutUs{
+        padding-left: 30px !important;
+        margin: 15px 2px;
+    }
 }
 
+/* media query for device width 768px and above */
+@media (min-width: 700px) and (max-width: 790px){
+  .index{
+        height: 1000px;
+    }
+    /* section 1 landing page  */
+    .sec1-imgL{
+        
+       width: 300px !important;
+    
+    }
+    .sec1-imgM{
+       width: 300px !important;
+       height: 430px;
+       padding-top: 30px;
+    }
+
+    .sec3right-col{
+        padding-top: 45px ;
+    }
+    .sec3-left{
+ 
+        padding: 0px !important;
+    }
+    .collection1 h2{
+        padding-top: 15px !important;
+ 
+    }
+    .collection1 h3{
+        margin: 0px !important;
+        padding: 0px !important;
+        font-size: 40px !important;
+    }
+    .sec3-pad{
+        padding: 0px !important;
+        height:60% !important;
+    }
+    .img-col{
+        margin-top: 25px !important;
+    }
+    
+}
+
+@media (min-width: 800px) and (max-width: 1240px){
+    .index{
+        height: 1100px !important;
+    }
+    .signup-padding{
+        padding: 170px !important;
+    }    
+
+    /* about page sec3  */
+    
+}
+
+/* media query for tablet and desktop  */
 @media (min-width: 601px) and (max-width: 1200px) {
-    /* footer  */
+  /* login  */
+    .index{
+        height: 1000px;
+    }
+     
+    /* styling for section1 landing page  */
+   .sec1 .all-btn {
+    margin-right: 0px !important;
+   }
+   .IMG-SEC {
+    margin-top: 70px;
+   }
+   .sec1-imgL{
+    padding-top: 0px !important;
+   }
+   .sec1-imgR{
+    margin-top: 70px !important;
+   }
+    /* footer  styling for nav list*/
     .footer-col{
         padding-left: 0px !important;
     }
-    /* ENDS HERE  */
+    .col-a{
+        flex: 0 0 50%;
+        max-width: 30%;
+    }
+    .col-b{
+        flex: 0 0 50%;
+        max-width: 30%;
+    }
+    .col-c{
+        flex: 0 0 50%;
+        max-width: 30%;
+    }
+    .col-d{
+        padding-top: 50px;
+        flex: 0 0 100%;
+        padding-left: 30%;
+    }
+
+/* media for footer  max-with 1200px    */
+    .footer-font h5{
+        font-size: 15px !important;
+        padding-bottom: 30px;
+    }
+    .footer-font .form{
+        width: 90%;
+        margin: 0px;
+    }
+    .contact-mail{
+        margin-left: 0px !important;
+    }
+    .home-main{
+        max-width: 100%;
+    }
+    /* ends here  */
+
+    /* media for section 3 landing page  */
+    .sec3-left{
+        height:43.3% !important;
+    }
+    .collection1 h2{
+        padding-top: 15px !important;
+        /* height: 100% !important; */
+    }
+    .collection1 h3{
+        margin-top: 15px !important;
+    }
+    .collection1 p{
+        margin-bottom: 13px !important;
+        font-size: 20.5px !important;
+    }
+    .collectionb{
+        height: 20% !important;
+        margin-top: 5px !important;
+        width: 100% !important;
+    }
+    .sec3-pad .text-center{
+        margin-top: 0 !important;
+    }
+    .sec3-pad{
+        margin: 0px !important;
+        padding: 0 15px !important;
+        
+    }
+
+     .collection1 br{
+        display: none;
+     }
+     /* reset for explore more btn  */
+     .explore{
+        height: 60px !important;
+     }
+     /* ends  */
+     .all-btn{
+        width: 50%;
+        height: 90px;
+     }
+     .sec3 .text-center{
+        margin-top: 10px !important;
+        padding-top: 0 !important;
+     }
+     .collection2{
+        margin: 0 !important;
+     }
+     .collection3{
+        margin-top: 30px !important;
+     }
+    
+    /* ends here  */
+
+    /* section 5 landing page  */
+    /* .sec5 br{
+        display: none;
+    } */
+    .sec5 .card-body{
+        width: 100%;
+        height: 600px;
+        padding-left: 0px !important;
+    }
+    .sec5 br{
+        display: none;
+    }
+
+    .card-sec5 .d-flex{
+        width: 100%;
+    }
+    /* section 5 ENDS HERE  */
 
     /* QUERY FOR LOGIN FORM STARTS HERE  */
     .order-md-2, .order-md-1{

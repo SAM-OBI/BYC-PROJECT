@@ -10,10 +10,10 @@
     <link rel="shortcut icon" href="./images/BYC LOGO JPG FILE 1.png" type="image/x-icon">
 
     <!-- font awesome cdn  -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg mb-5 mb-lg-5 pb-lg-5">
+    <nav class="navbar navbar-expand-lg bg-white">
         <div class="container-fluid"> 
               <!-- Left UL LI -->
                 <div class="d-none d-lg-flex">
@@ -26,21 +26,21 @@
 
             <!-- BYC LOGO (Center) -->
              <a class="navbar-brand mx-lg-auto" href="#">
-              <img src="./images/BYC LOGO JPG FILE 1.png" alt="BYC Logo">
+                <img src="./images/BYC LOGO JPG FILE 1.png" alt="BYC Logo">
             </a> 
 
             <!-- Right Menu -->
             <div class="d-none d-lg-flex align-items-center">
-              <ul class="navbar-nav">
-                  <li class="nav-item "><a class="nav-link" href="#">About Us</a></li>
-                  <li class="nav-item mx-lg-1"><a class="nav-link" href="#">Contact</a></li>
-              </ul>
-              <div class="icon-links d-flex align-items-center">
-                  <a href="#"><i class="fas fa-search mx-lg-3"></i></a>
-                  <a href="#"><i class="far fa-user mx-lg-2"></i></a>
-                  <a href="#"><i class="far fa-heart mx-lg-2"></i></a>
-                  <a href="#"><i class="fas fa-shopping-cart mx-lg-2"></i></a>
-              </div>
+                <ul class="navbar-nav">
+                    <li class="nav-item "><a class="nav-link" href="#">About Us</a></li>
+                     <li class="nav-item mx-lg-1"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+                <div class="icon-links d-flex align-items-center">
+                    <a href="#"><i class="fas fa-search mx-lg-3"></i></a>
+                    <a href="#"><i class="far fa-user mx-lg-2"></i></a>
+                    <a href="#"><i class="far fa-heart mx-lg-2"></i></a>
+                    <a href="#"><i class="fas fa-shopping-cart mx-lg-2"></i></a>
+                </div>
             </div>
             <!-- Mobile Toggler -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobileMenu">
@@ -49,7 +49,7 @@
         </div>
 
           <!-- Mobile Menu -->
-        <div class="collapse navbar-collapse" id="mobileMenu">
+        <div class="collapse navbar-collapse " id="mobileMenu">
             <ul class="navbar-nav text-start">
                 <li class="nav-item d-lg-none"><a class="nav-link" href="#">Shop Products</a></li>
                 <li class="nav-item d-lg-none"><a class="nav-link" href="#">Blog</a></li>
@@ -65,49 +65,75 @@
             </ul>
         </div>
     </nav> 
-    
-    <section class="container-fluid index-login">
-        <div class="container index  px-lg-5 px-md-4">
-            <div class="row  pb-lg-4 ">
-              <!-- first col here  -->
-              <div class="col-sm-12 col-lg-6 col-md-6 order-2 order-md-2 order-lg-1 ">
-                    <div class="text-center">
-                        <h2 class="index-login pt-3 my-3 my-lg-5">Login</h2>
-                    </div>
-                    <form class="mb-3 login-form ">
-                        <label for="loginEmail" class="form-label mb-3" id="form-label">E-mail</label><br>
-                        <input type="email" class="loginEmail mb-4" id="loginEmail" ><br>
 
-                        <label for="password" class="form-label mb-3" id="form-label">Password</label><br>
-                        <input type="password" class="mb-3 password" id="loginPassword" >
+    <!-- breadcrumb for contact us here  -->
+    <div class="container-fluid px-lg-5  mt-3 pb-lg-3 my-lg-5">
+        <nav aria-label="breadcrumb">
+            <ul class="breadcrumb" style=" --bs-breadcrumb-divider: '>';">
+                <li class="breadcrumb-item "><a href="dashBoard.html" class="breadcrumb-item text-decoration-none text-dark">Home</a></li>
+                <!-- <li class="breadcrumb-item"><a href="blog.html">blog</a></li> -->
+                <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
+            </ul>
+        </nav>
+    </div>
+    <main class="container-fluid contact-us">
+        <!-- default h1 heading  -->
+        <h1 class="text-center mt-5 mt-lg-0 mb-5 pb-lg-5 mb-md-5 default-h1">CONTACT US</h1>
+        <section class="contac-address">
+            <img src="./images/Rectangle (1).png" alt="coordinate" usemap="#myMap" class="img-fluid w-100 px-lg-5">
+             <!-- <iframe 
+                src="https://www.google.com/maps/embed?pb=..."
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe> -->
 
-                        <div class="d-flex justify-content-between align-items-center  mb-3">
-                          <div>
-                            <input type="checkbox" class="form-check-input me-1 mt-2 pt-4 pb-1 me-lg-3" id="rememberMe">
-                            <label class="form-check-label  fg-index" for="rememberMe">Remember me</label>
-                          </div>
-                          <a href="" class="mt-2 fg-index text-decoration-none text-dark">forgot your password?</a>
-                        </div>
-                        <button class="mt-3 login-Btn" id="login-Btn"  onclick="loginForm(event)">LOGIN</button>
-                    </form>
-              </div>
-                <!-- second col here  -->
-              <div class="col-sm-12 col-md-6 col-lg-6 order-1 order-md-1 ">
-                  <div class="text-center">
-                        <h2 class="index-login pt-4 my-3 my-lg-5">Create your an account</h2>
+            <map name="myMap">
+                <area shape="rect" coords="" href="" alt="Location 1">
+                <area shape="circle" coords="" href="" alt="Location 2">
+                <area shape="poly" coords="" href="" alt="Location 3">
+            </map>
+
+            <!-- row for address phone and email  -->
+            <div class="row px-lg-5 my-lg-5 py-lg-5 py-4">
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                  <div class="d-flex align-items-center">
+                    <img src="./images/Frame 157.png" alt="address" class="img-fluid">
+                    <div class="ms-3">
+                      <h5 class="pt-1">Address</h5>
+                      <p>( Head Office ) <br> 175 Cameroun Road Aba, Abia State.</p>
                     </div>
-                  <div class="text-center Signup">
-                      <p class="fg-index pt-3 pt-lg-5 my-3 my-lg-5 mb-lg-4 pb-lg-5 signup-padding">Create your customer account in just a few clicks! <br>
-                          You can register using your e-mail address </p>
-                      <div class="mt-lg-5 mt-md-4 pt-lg-5">
-                         <button class="mt-3 login-Btn mb-5 " id="create-Btn"  onclick="createAccount(event)">CREATE AN ACCOUNT VIA E-MAIL</button>
-                      </div>
                   </div>
               </div>
+
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                  <div class="d-flex align-items-center mb-3 mb-lg-0">
+                    <img src="./images/Frame 158.png" alt="address">
+                    <div class="ms-3">
+                      <h5>PHONE</h5>
+                      <p>08101375376 09053403403</p>
+                    </div>
+                  </div>
+              </div>
+
+              <div class="col-sm-12 col-md-6 col-lg-4">
+                  <div class="d-flex align-items-center">
+                    <img src="./images/Frame 159.png" alt="address">
+                    <div class="ms-3">
+                      <h5>EMAIL ADDRESS</h5>
+                      <p>BYCAFRICA@gmail.com</p>
+                    </div>
+                  </div>
+              </div>
+
             </div>
-        </div>
-    </section>
-    
+
+        </section>
+
+
+
+    </main>
+
+
+
 
 
 
@@ -186,7 +212,8 @@
         <!-- Footer Content ends here -->
       </div>
     </footer>
+    <script src="./js/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>   
 </body>
 </html>
